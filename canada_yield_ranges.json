@@ -1,0 +1,8 @@
+{
+  "description": "Canada-only per-crop standardized yield ranges. relMAE in Table 4 = MAE / range for that crop. These constants are REQUIRED to reproduce Table 4; computing ranges from the full (US+Canada) dataset yields incorrect relMAE values. Source: validation_noA_tf19.ipynb cell 17, which filters records with name.split('/')[0]=='CA'.",
+  "ranges": {
+    "Barley": 3.1865, "Canola": 3.8889, "Corn": 2.2465, "Flaxseed": 6.2495,
+    "Lentils": 5.5967, "Oats": 6.3767, "Peas": 3.3313, "Soy": 4.0306,
+    "SpringWheat": 2.9264, "WinterWheat": 4.6636
+  }
+}
