@@ -15,11 +15,13 @@ https://github.com/AmanjotBhullar/DeepS3.
 | `eval_tf15_paperarch.py` | Canada-only evaluation of the released DeepS4 checkpoint (reproduces Table 4) |
 | `eval_ns_base.py` | Canada-only evaluation of the released DeepS3++ checkpoint |
 | `ablation_s4.py`, `ablation_ns.py` | Variable-importance analyses (permutation and inference-time ablation) |
+| `sens_coords.py` | Coordinate-substitution sensitivity analysis reported in the Supplementary Information (own centroid vs nearest other district vs random in-bag coordinates) |
 
 ### Figure code
 | File | Purpose |
 |---|---|
 | `render_figure1.py` | Figure 1 (training and test coverage map) |
+| `pixel_maps_s4.py` | Per-pixel DeepS4 suitability predictions over the TFRecords (taps the model's pre-aggregation layer; writes the gridded npz rendered by `render_figure3_grid.py`) |
 | `render_figure3_grid.py` | Figure 3 (suitability maps, single page, within-hull tertiles) |
 | `split_figure2.py` | Figure 2 (architecture, three panels) |
 | `oob_embedding_fix.py` | Per-pixel own-coordinate embedding used by the primary maps |
